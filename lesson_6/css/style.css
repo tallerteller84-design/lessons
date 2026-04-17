@@ -1,0 +1,236 @@
+body{
+    font-family:"Poppins", sans-serif  ;
+   
+}
+
+span{
+color: #1AAF5B;
+font-family: "DM Sans" , sans-serif ;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.3px;
+}
+.grown{
+color: #131313;
+font-family: "DM Sans"  , sans-serif  ;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.3px; 
+margin-bottom: 20px;
+}
+.nature{
+width: 460px;
+color: #000;
+font-family: "DM Sans" ,sans-serif  ;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: -0.5px;
+opacity:0.6 ;
+text-decoration: none;
+}
+.GrownbyNature{
+    padding: 20px;
+}
+
+h2{
+    font-size: 20px;
+    color: #1AAF5B;
+}
+p{
+    color: brown;
+}
+
+/* Discover Our New Collection */
+
+.container{
+    background:rgba(255, 243, 227, 1) ;
+    width: 643px; 
+    border-radius: 10px;
+    padding: 62px 56px 37px 39px;
+}
+
+.newarrival {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing:  3px; 
+    color:rgba(51, 51, 51, 1) ;
+    margin-bottom: 4px;
+
+}
+.name{
+    width:559px ;
+    margin-bottom: 17px ;
+}
+.discover {
+    display: block;
+    color: rgba(184, 142, 47, 1) ;
+    font-size:52px ;
+    font-weight:700 ;
+    line-height:65px ;
+     margin-bottom: 14px;
+}
+.collection {
+  display: block;  
+  color: rgba(184, 142, 47, 1) ;
+  font-size:52px ;
+  font-weight:700 ;
+  line-height:65px ;
+}
+.text {
+    display: block;
+    color:rgba(51, 51, 51, 1) ;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom:46px ;
+}
+.buynow {
+    background-color:rgba(184, 142, 47, 1) ;
+    width: 222px;
+    height: 74px;
+    margin-bottom: 20px;
+}
+.buy{
+ display: block;    
+ color: rgba(255, 255, 255, 1);
+ font-size: 16px;
+ font-weight: 700;
+ text-transform: uppercase;
+ padding: 25px 72px ;
+
+}
+.furniro {
+      max-width: 1440px;
+      min-height: 316px;
+      margin: 20px;
+    
+      
+      
+    
+    
+}
+.furniro__info {
+     background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+    background:url(../img/office.png) ;
+    text-align: center;
+    padding: 61px;
+}
+.logo {
+    display: block;
+    width: 77px;
+    height: 77px;
+    margin:0 auto ;
+    
+
+
+}
+.product {
+color: #000;
+text-align: center;
+font-size: 48px;
+font-weight: 500;
+margin-bottom:2px ;
+}
+.home__comparison{
+color: #000;
+font-size: 16px;
+font-weight: 500;
+
+}
+
+.home__comparison-arrow{
+    
+   
+    width: 20px;
+    height: 20px;
+}
+.home__comparison-small{
+color:rgba(0, 0, 0, 1) ;
+font-size: 16px;
+font-weight: 300;
+text-align: center;
+
+}
+.webdesigner__container {
+    max-width:1440px ;
+    min-height:342px ;
+    background-image: url(../img/web.png);
+    margin:20px ;
+   background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+   
+}
+
+.webdesigner__name{
+color:rgba(249, 239, 236, 1);
+font-family: "Barlow", sans-serif ; 
+font-size: 64px;
+font-weight: 800;
+line-height: 96px;
+text-transform: uppercase; 
+text-align: center;
+display: block;
+padding-top:94px ;
+margin-bottom: 17px;
+
+
+}
+.webdesigner__button{
+display: block;
+width: 235px;
+height: 50px;
+border-radius: 12px;
+background-color:rgba(10, 132, 255, 1) ;
+margin:0 auto ;
+color: #FFF;
+text-align: center;
+font-family: "Roboto Flex",sans-serif  ;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-transform: capitalize;
+padding-top: 14px;
+}
+.catalyst{
+    background-color:rgba(26, 26, 26, 1) ;
+    max-width: 834px;
+    padding:32px ;
+    border-radius: 12px;
+}
+.catalyst__title{
+color:rgba(249, 239, 236, 1);
+font-family: "Barlow", sans-serif;
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+text-transform: uppercase; 
+margin-bottom: 12px;
+}
+.catalyst__text p {
+color:rgba(179, 179, 178, 1) ;
+font-family: "Barlow",sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; 
+margin-bottom: 24px;
+}
+.catalyst__list li{
+background:url("../img/stern.svg") 0 4px no-repeat ;
+color:rgba(179, 179, 178, 1) ;
+font-family: "Barlow",sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;   
+margin-bottom: 12px;
+padding-left: 26px;
+min-height:30px ;
+}
