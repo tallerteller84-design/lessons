@@ -1,0 +1,142 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(149, 112, 112);
+
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f4c6c5;
+    z-index: 50;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+}
+.menu__item:not(:last-child) {
+    margin-right: 80px;
+    
+}
+.menu__item:hover .menu__link{
+    text-decoration: underline;
+    color: rgb(164, 52, 52);
+}
+.menu__item:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.menu__link {
+    font-size: 20px;
+    padding: 30px 30px;
+}
+.menu__submenu{
+    position: absolute;
+    left: 15px;
+    top: 100%;
+    width: 120px;
+    background-color: rgb(217, 233, 233);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+}
+.submenu__item:not(:last-child) {
+    margin-bottom:  10px;
+} 
+.submenu__link {
+    font-size: 18px;
+    padding: 15px;
+}
+.submenu__link:hover {
+    text-decoration: underline;
+    color: white;
+}
+.submenu__subitems{
+    position: absolute;
+    left:120px;
+    top: 57px;
+    width: 120px;
+    background-color: rgb(239, 216, 186);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu__subitem:hover .submenu__subitems {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu__subitem:not(:last-child) {
+    margin-bottom:  10px;
+}
+
+.submenu__sublink{
+    font-size: 18px;
+    right: 50px;
+    padding: 15px;
+    
+    
+}
+.submenu__sublink:hover {
+    text-decoration: underline;
+    color: white;
+    
+}
+.submenu__item:hover .submenu__subitems{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------------------------- */
+.catalyst {
+	padding-block-start: 100px;
+    /* background-color: antiquewhite; */
+}
+
+.catalyst__item {
+	max-width: 834px;
+	margin-inline: auto;
+	padding: 32px;
+	background-color: rgba(26, 26, 26, 1);
+	border-radius: 12px;
+}
+.catalyst__title {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-block-end: 12px;
+    color:#F9EFEC;;
+}
+.catalyst__list {
+	color: rgba(179, 179, 178, 1);
+	line-height: 1.5;
+}
+.catalyst__list  :not(:last-child) {
+	margin-block-end: 12px;
+}
+
+.catalyst__list li {
+	position: relative;
+	margin-inline-start: 26px;
+	z-index: 1;
+}
+
+.catalyst__list:has(li) ::before {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	background-image: url("../img/diamond.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 4px;
+	left: -26px;
+	z-index: 1;
+}
