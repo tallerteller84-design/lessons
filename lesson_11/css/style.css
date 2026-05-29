@@ -1,0 +1,176 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(149, 132, 112);
+
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: clip;
+    background-color: #682a5d;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+[class*="__container"]{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__title{
+    margin-bottom: 10px;
+    padding: 20px;
+text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+
+.page__container {
+    padding: 10px 15px;
+
+}
+
+
+
+.page__content {
+    text-align: center;
+}
+
+.page__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 180px;
+    margin: 15px;
+    background-color: #491616;;
+
+    perspective: 500px; 
+}
+
+.page__box {
+    width: 100%;
+    height: 100%;
+    background-color:#316983;;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+.page__item--t1:hover .page__box { transform: translate(-20%, 2%); }
+.page__item--t2:hover .page__box { transform: translate(30px, 50px); }
+.page__item--t3:hover .page__box { transform: translate(0, -20px); }
+
+.page__item--s1:hover .page__box { transform: scale(1.1); }
+.page__item--s2:hover .page__box { transform: scale(0.5); }
+
+.page__item--r1:hover .page__box { transform: rotate(20deg); }
+.page__item--r2:hover .page__box { transform: rotate(110deg); }
+
+.page__item--sk1:hover .page__box { transform: skew(5deg, 5deg); }
+
+.page__item--origin:hover .page__box { 
+    transform-origin: 0 0;
+    transform: rotate(20deg); 
+}
+
+
+
+
+.auto {
+    background-color: #535075;
+    background-repeat: no-repeat;
+
+    background-size: 100% auto; 
+    
+    background-position: center bottom;
+    
+
+    min-height: 450px; 
+    width: 100%;
+}
+
+.auto__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+}
+
+
+.car{
+    position: absolute;
+
+    bottom: 39%; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.car__body{
+    width: 350px;
+    height: 150px;
+    transition: transform 1s ease-in;
+}
+
+
+.auto:hover .car {
+    transform: translate(calc(-50% + 60vw), -5px);
+    transition: transform 3s linear;
+}
+
+.car__body {
+    position: absolute;
+    bottom: 30px;
+    width: 250px;
+    height: 60px;
+    background-color: #1b1514;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.car__cabin {
+    position: absolute;
+    top: -45px;
+    left: 60px;
+    width: 130px;
+    height: 50px;
+    background-color: #c0392b;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+
+.car__window {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+    height: 30px;
+    background-color: #34495e;
+    border-radius: 5px;
+    margin: 10px 2px 0;
+    transform: skewX(-20deg);
+}
+
+.car__wheel {
+    position: absolute;
+    bottom: -10px;
+    width: 55px;
+    height: 55px;
+    background-color: #469b15;
+    border-radius: 50%;
+    border: 4px dashed #800589;
+    z-index: 3;
+    transition: transform 1s ease-in-out;
+}
+
+.car__wheel--left { left: 20px; }
+.car__wheel--right { right: 10px; }
+
+
+.auto:hover .car__wheel {
+    transform: rotate(720deg);
+    transition: transform 3s linear;
+}
