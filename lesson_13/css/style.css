@@ -1,0 +1,275 @@
+body {
+    font-family: "Poppins", sans-serif;
+   
+
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    
+
+}
+
+[class*="__container"]{
+    max-width: 1213px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper > main{
+    flex-grow: 1;
+}
+
+.header__title{
+    margin-bottom: 10px;
+    padding: 20px;
+text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	padding: 100px;
+}
+
+
+
+.browse-the-range__container {
+	max-width: 1213px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+
+.browse-the-range {
+	padding-block-end: 60px;
+}
+
+.browse-the-range__header {
+	text-align: center;
+	margin-block-end: 50px;
+}
+
+.browse-the-range__header p {
+	color: rgba(102, 102, 102, 1);
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.browse-the-range__title {
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.browse-the-range__items {
+	display: flex;
+	gap: 20px;
+}
+
+.browse-the-range__img {
+	overflow: hidden;
+	margin-block-end: 32px;
+}
+
+.browse-the-range__link:hover .browse-the-range__label {
+	text-decoration: underline;
+}
+
+.browse-the-range__img img {
+	transition: transform 0.4s;
+}
+
+.browse-the-range__img img:hover {
+	transform: scale(1.02);
+}
+
+
+.browse-the-range__label {
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+
+	line-height: 1.5;
+}
+
+.products__container {
+	max-width: 1266px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+
+.products__title {
+	font-size: 40px;
+	font-weight: 700;
+
+	text-align: center;
+	margin-block-end: 32px;
+}
+
+.products__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+
+	margin-block-end: 32px;
+}
+
+.card {
+	max-width: 285px;
+	width: 100%;
+	position: relative;
+	z-index: 50;
+}
+
+.card:hover .action {
+	transition: opacity 0.4s ease 0s;
+	opacity: 1;
+}
+
+.action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(58, 58, 58, 0.72);
+	opacity: 0;
+	transition: opacity 0.4s ease 0s;
+}
+
+.action__buttons {
+	color: white;
+}
+
+.action__buttons *::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+	vertical-align: middle;
+
+	margin-top: -2px;
+}
+
+.action__buttons *:hover {
+	text-decoration: underline;
+}
+
+.action__share::before {
+	background: url("../img/share.svg") 0 0 / contain no-repeat;
+
+}
+
+.action__compare::before {
+	background: url("../img/compare.svg") 0 0 / contain no-repeat;	
+}
+
+.action__like::before {
+	background: url("../img/Heart.svg") 0 0 / contain no-repeat;	
+}
+
+.action__btn {
+	margin-block-end: 25px;
+}
+
+
+.action__btn a {
+	font-weight: 600;
+	background-color: white;
+	border: 1px solid rgba(184, 142, 47, 1);
+	color: rgba(184, 142, 47, 1);
+	padding: 12px 52px;
+
+	transition: background-color 0.4s;
+}
+
+.action__btn a:hover {
+	color: white;
+	background-color: rgba(184, 142, 47, 1);
+}
+
+.action__buttons {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	font-weight: 600;
+}
+
+.card__label {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	color: white;
+	border-radius: 50%;
+	font-weight: 500;
+	line-height: 3;
+
+	text-align: center;
+	top: 24px;
+	right: 24px;
+}
+
+.card__label--discount {
+	background-color: rgba(233, 113, 113, 1);
+
+}
+
+.card__label--new {
+	background-color: rgba(46, 193, 172, 1);
+}
+
+.card__img img{
+	width: 100%;
+
+}
+
+.card__content {
+	background-color: rgba(244, 245, 247, 1);
+	padding: 16px 16px 30px 16px;
+}
+
+.card__title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-block-end: 8px;
+}
+
+.card__descriprion {
+	color: rgba(137, 137, 137, 1);
+	font-weight: 500;
+	margin-block-end: 8px;
+}
+
+.card__price {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.products__button {
+	text-align: center;
+}
+
+.products__button a {
+	color: rgba(184, 142, 47, 1);
+	padding: 12px 82px;
+	font-weight: 600;
+	line-height: 1.5;
+	border: 1px solid rgba(184, 142, 47, 1);
+
+	transition: background-color 0.4s;
+}
+
+.products__button a:hover {
+	color: white;
+	background-color: rgba(184, 142, 47, 1);
+}
+
